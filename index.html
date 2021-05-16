@@ -33,6 +33,21 @@
        max-width: 600px;
        margin-bottom: 1.5em;
      }
+
+      .map-responsive{
+          overflow:hidden;
+          padding-bottom:56.25%;
+          position:relative;
+          height:0;
+      }
+
+      .map-responsive iframe{
+          left:0;
+          top:0;
+          height:100%;
+          width:100%;
+          position:absolute;
+      }
    </style>
 
     <div class="center">
@@ -42,7 +57,9 @@
           <img class="house-image" src="house.jpg"/>
         </div>
       </a>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.6359278133764!2d-122.30808088444245!3d47.594323096819195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906aecae7d0b71%3A0xeaf09a5e603442e4!2s2005%20S%20Charles%20St%2C%20Seattle%2C%20WA%2098144!5e0!3m2!1sen!2sus!4v1621179983197!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    </div>
+      <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.6359278133764!2d-122.30808088444245!3d47.594323096819195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906aecae7d0b71%3A0xeaf09a5e603442e4!2s2005%20S%20Charles%20St%2C%20Seattle%2C%20WA%2098144!5e0!3m2!1sen!2sus!4v1621179983197!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </div>
   </body>
 </html>
